@@ -48,7 +48,8 @@ GRID
 }
 .portfolio-image {
 	position: relative;
-	width: 40%;
+	width: 300px;
+	height: auto;
 	padding: 5px;
 	margin: 10px;
 	z-index: 0;
