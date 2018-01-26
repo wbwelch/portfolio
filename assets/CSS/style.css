@@ -46,6 +46,14 @@ GRID
 	margin: 10px;
 	position: relative;
 }
+.portfolio-image {
+	position: relative;
+	width: 40%;
+	padding: 5px;
+	margin: 10px;
+	z-index: 0;
+	display: inline-block;
+}
 .footer {
 	display: table-row;
 	height: 1px;
@@ -63,16 +71,5 @@ GRID
 .aside {
 	margin-left: 5em;		
 }
-/*
-========================================
-IMAGES
-========================================
-*/
-.portfolio-image {
-	position: relative;
-	width: 40%;
-	padding: 5px;
-	margin: 10px;
-	z-index: 0;
-	display: inline-block;
-}
+
+
