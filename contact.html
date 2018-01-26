@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+			<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		.aside {
+			margin-left: 5px;	
+		}	
+		html,body {
+    		height:100%;
+			width: 100%;
+		}
+
+		body {
+    		display: table;
+		}
+
+		.container {
+   			height: auto;
+		}
+
+		.footer {
+			display: table-row;
+			height: 1px;
+		}
+		
+		.form-control {
+			margin-bottom: 3em;
+			
+		}
+		label {
+			margin: 2px 0;
+			padding: 2px 0;
+		}
+		form {
+			padding: 1px 0;
+			position: relative;
+		}
+		textarea,
+		input {
+			position: relative;
+			padding: 2px 0;
+			margin: 1px 0;
+			left: -13px;
+		}
+		.submitBtn {
+			position: absolute;
+		}
+		.panel {
+			padding: 5px;
+		}
+		.buttonWrapper {
+			padding: 20px;
+		}
+	</style>
+	</head>
+
+	<body>
+		<!--header-->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-5 col sm-12 col-xs-12">
+					<h1>Whitney Welch</h1>
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col sm-12 col-xs-12"></div>
+
+				<div class="col-lg-3 col-md-3 col sm-12 col-xs-12">
+							<ul class="nav navbar-nav inline-nav text-center">
+							<li><a href="index.html">About</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>	
+				
+			</div>
+		</div>
+			<!--division-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-left">				
+					<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="row panel panel-default">
+								<h2 class="panel-body">
+									Contact Me
+								</h2>
+						</div>
+						
+					<form>
+						<div class="row">
+							<div class="form-control">
+								<label for="inputName">
+									Name</label>
+
+									<input type="text" class="form-control" name="name" id="inputName" placeholder="John Smith">
+							
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-control">
+								<label for="inputEmail">
+									Email</label>
+									<input type="email" class="form-control" name="email" id="InputEmail1" placeholder="Email">
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-control">
+								<label for="inputMessage">
+									Message</label>
+									<textarea type="text" class="form-control" id="inputMessage" name="message" placeholder="Your message here.">
+										</textarea>
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="buttonWrapper">
+								<input class="btn btn-default submitBtn" type="submit" value="Submit">
+							</div>
+							</div>
+
+						
+					</form>
+	
+					</div>
+						
+					
+				</div>	
+				</div>
+				
+				<div class="aside panel panel-default col-lg-3 col-md-3 col sm-12 col-xs-12 text-center">
+					<div class="panel-body">
+						<div class="panel panel-default">
+							<h3 class="panel-body">
+								Connect with Me
+							</h3>
+						</div>
+						<!--division-->
+							<div>
+								<a target="_blank" href="https://www.facebook.com/authorwbwelch"><img src="assets/images/facebook-Logo.jpg" alt="Facebook logo with rounded corners" style="width:50px;"></a>
+								<a target="_blank" href="https://www.instagram.com/wbwelch"><img src="assets/images/instagram-logo.png" alt="Instagram logo with rounded corners" style="width:50px;"></a>
+								<a target="_blank" href="https://www.linkedin.com/in/whitney-welch/"><img src="assets/images/linkedin-logo.png" alt="LinkedIn logo with rounded corners" style="width:50px;"></a>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer text-center">
+
+			<div class="container">
+				<small>
+					&copy;Copyright 2017 Whitney Welch
+				</small>
+			</div>
+
+			
+		</footer>	
+	</body>
+</html>
