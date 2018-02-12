@@ -23,18 +23,39 @@ TYPOGRAPHYY
 ========================================
 */
 h1,
-h2,
 h3,
 p {
 	color: #212121;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
-h1,
-h2 {
-	font-weight: 700;
+h2,
+h3 {
+	color: #212121;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-weight: 300;
+	font-style: oblique;
+	font-variant: small-caps;
+	font-size: 42px;
+}
+h1 {
+	font-size: 43px;
 }
 h3 {
-	font-weight: 400;
+	font-size: 24px;
+	color: #821B1C;
+}
+.centered {
+	text-align: center;
+}
+.nav-menu {
+	color: #821B1C;
+	text-decoration: underline;
+}
+.small {
+	font-size: 18px;
+}
+small {
+	color: #212121;
 }
 /*
 ========================================
@@ -62,14 +83,53 @@ GRID
 	position: inherit;
 	background: white; 
 	bottom: 35px; 
-	color: #4C4B4B;
+	color: #821B1C;
 	display: inline-block;
 	text-align: center;
 	z-index: 1;
-	width: 40%;
+	width: 43%;
 }
 .aside {
-	margin-left: 5em;		
+	margin-left: 10em;		
 }
-
+a {
+	text-align: center;
+}
+/*
+========================================
+VISUALS
+========================================
+*/
+.pageHeader {
+	border: none;
+	box-shadow: none;
+}
+hr {
+	border-color: #212121;
+}
+/*
+========================================
+MEDIA QUERIES
+========================================
+*/
+@media screen and (max-width: 970px) {
+	body {
+		width: 100%;
+	}
+	.aside {
+		width: 100%;
+		margin-top: 5em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+@media screen and (max-width: 750px) {
+	body {
+		width: 100%;
+	}
+	.aside {
+		width: 100%;
+		margin-top: 5em;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
