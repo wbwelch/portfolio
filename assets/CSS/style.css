@@ -39,19 +39,21 @@ h3 {
 	font-variant: small-caps;
 	font-size: 42px;
 }
-h1 {
-	font-size: 43px;
-}
 h3 {
 	font-size: 24px;
 	color: #821B1C;
 }
 .centered {
 	text-align: center;
+	color: #212121;
+}
+h1 {
+	font-size: 43px;
 }
 .nav-menu {
 	color: #821B1C;
 	text-decoration: underline;
+	font-size: 18px;
 }
 .small {
 	font-size: 18px;
@@ -61,6 +63,11 @@ small {
 }
 .bold {
 	font-weight: 700;
+}
+.photo-text-small {
+	color: #821B1C;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 14px;
 }
 /*
 ========================================
@@ -83,7 +90,7 @@ hr {
          -o-transform: rotate(120deg);
             transform: rotate(120deg);
     cursor: pointer;
-    }
+}
 .hexagon-in1 {
     overflow: hidden;
     width: 100%;
@@ -93,7 +100,7 @@ hr {
         -ms-transform: rotate(-60deg);
          -o-transform: rotate(-60deg);
             transform: rotate(-60deg);
-    }
+}
 .hexagon-in2 {
     width: 100%;
     height: 100%;
@@ -107,16 +114,12 @@ hr {
         -ms-transform: rotate(-60deg);
          -o-transform: rotate(-60deg);
             transform: rotate(-60deg);
-    }
-.hexagon-in2:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-    }
+}
 .dodecagon {
     width: 200px;
     height: 200px;
     margin: -80px 0 0 20px;
-    }
+}
 #port-image {
 	position: relative;
 	top: 2em;
@@ -127,48 +130,66 @@ hr {
 GRID
 ========================================
 */
+.rela {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
 .container {
 	height: auto;
-	margin: 10px;
 	position: relative;
+	margin: 10px auto;
+}
+.portfolio-entries {
+	width: 45%;
+	position: relative;
+	display: inline-block;
+	padding: 5px auto;
+	margin: 10px auto;
 }
 .portfolio-image {
 	position: relative;
-	width: 40%;
-	padding: 5px;
-	margin: 10px;
-	z-index: 0;
-	display: inline-block;
-}
-.footer {
-	display: table-row;
-	height: 1px;
+	width: 90%;
+	padding: 5px auto;
+	margin: 10px auto;
 }
 .photo-text {
-	position: inherit;
-	background: white; 
-	bottom: 35px; 
+	position: relative;
+	background-color: rgba(255,255,255,0.00); 
+	bottom: 30px; 
 	color: #821B1C;
-	display: inline-block;
 	text-align: center;
-	z-index: 1;
-	width: 43%;
+	width: 90%;
+	padding: 15px;
+	margin: 10px auto;
 }
-.aside {
-	margin-left: 10em;		
+.photo-text-small {
+	display: inline;
+	position: relative;
+	bottom: 35px;
+}
+.box-center {
+	width: 40%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 a {
 	text-align: center;
 }
 .connect {
 	position: relative;
-	padding: 3em auto;
-	margin: 3em auto;
+	padding: 10px auto;
+	margin: 10px auto;
 	width: 90%;
 }
 .about-me-holder {
-	padding: 1em;
-	margin: 1em auto;
+	padding: 5px;
+	margin: 10px auto;
+}
+.footer {
+	display: table-row;
+	height: 1px;
 }
 /*
 ========================================
@@ -179,12 +200,6 @@ MEDIA QUERIES
 	body {
 		width: 100%;
 	}
-	.aside {
-		width: 100%;
-		margin-top: 5em;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.about-me-holder {
 		position: relative;
 		top: 4em;
@@ -192,14 +207,14 @@ MEDIA QUERIES
 	#port-image {
 		top: 1em;
 	}
-@media screen and (max-width: 750px) {
-	body {
+	.portfolio-entries {
 		width: 100%;
 	}
-	.aside {
-		width: 100%;
-		margin-top: 5em;
-		margin-left: auto;
-		margin-right: auto;
+	.photo-text {
+		font-size: 28px;
 	}
+	.connect {
+		bottom: -30px;
+	}
+
 
