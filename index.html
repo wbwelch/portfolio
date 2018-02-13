@@ -1,116 +1,99 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<!--meta-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--title-->
 		<title>Portfolio</title>
-			<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<style>
-		.aside {
-			margin-left: 1em;		
-		}	
-		html,body {
-    		height:100%;
-			width: 100%;
-		}
-
-		body {
-    		display: table;
-		}
-
-		.container {
-   			height: auto;
-		}
-
-		.footer {
-			display: table-row;
-			height: 1px;
-		}
-	</style>
+		
+		<!--stylesheets-->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href ="assets/CSS/style.css">
+		<!--end head-->
 	</head>
 
 	<body>
 		<!--header-->
-
-		<div class="container">
+		<div class="container" style="border: none;">
 			<div class="row">
-				<div class="col-lg-5 col-md-5 col sm-12 col-xs-12">
-					<h1>Whitney Welch</h1>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<h1 class="centered">Whitney Welch</h1>
 				</div>
-				
-				<div class="col-lg-4 col-md-4 col sm-12 col-xs-12"></div>
-
-				<div class="col-lg-3 col-md-3 col sm-12 col-xs-12">
-							<ul class="nav navbar-nav inline-nav text-center">
-							<li><a href="index.html">About</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="contact.html">Contact</a></li>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<ul class="centered nav navbar-nav inline-nav text-center">
+					<li><a class="centerd nav-menu" href="index.html">About</a></li>
+					<li><a class="centered nav-menu" href="portfolio.html">Portfolio</a></li>
+					<li><a class="centered nav-menu" href="contact.html">Contact</a></li>
 					</ul>
 				</div>	
-				
 			</div>
-		</div>
-			<!--division-->
-		<div class="container">
-			<div class="row">
-				
-				<div class="panel panel-default col-lg-8 col-md-8 col sm-12 col-xs-12 text-left">
-					<div class="panel-body">
-						<div class="row panel panel-default">
-								<h2 class="panel-body">
-									About Me
-								</h2>
-						</div>
-
-
-							<div class="media">
-								<div class="media-left img-responsive" alt="Responsive image">
-									<img class="media-object" src="assets/images/wbwelch.jpg" alt="Whitney Welch smiling with sunglasses on">
-								</div>
-
-
-							<div class="media-body">
-								<p>
-									WB Welch has had her hand in everything. She worked for her college paper, interned at a law firm, wore many hats in the family dental practice…she rented a photo studio for a year, started her own natural skin care product line, was a certified personal trainer and corrective exercise specialist, and she is currently enrolled in a full-stack web development program. Thankfully, during all that time, she found her way back to fiction and is very happy to call herself a writer.
-								</p>
-
-								<p>
-									Publishing credits include "Baby Muncher” in Thrice Fiction, Brenna’s Wing, along with her blog, readwbwelch.com. She holds a bachelor’s degree in journalism from Southern Methodist University.
-								</p>
-								</div>
-							</div>
-					</div>
+			<hr>
+			<!--main body-->
+				<div class="row">
+					<div class="conainer">
 						
-					
-				</div>	
-				
-				<div class="aside panel panel-default col-lg-3 col-md-3 col sm-12 col-xs-12 text-center">
-					<div class="panel-body">
-						<div class="panel panel-default">
-							<h3 class="panel-body">
+						<!--portfolio image-->
+						<div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<div id="port-image" class="hexagon dodecagon float-clear"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>
+						</div>
+							<!--about me-->
+							<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 about-me-holder">
+								<p class="about-me bold">
+									ABOUT ME
+								</p>
+								<p class="about-me">
+									Being both a creative and a technical thinker, I am always looking for ways to improve what I see and for a new means to get it done. You have to know what's in the box before you can think outside of it. 
+								</p>
+								<p class="about-me">
+									With a history in problem solving, creative writing, and document editing, I bring a ready eye to web development.
+								</p>
+								<!--coding languages-->
+								<p class="about-me bold">
+									Relevant Languages &amp; Software
+								</p>
+								<!--languages list-->
+								<ul class="about-me">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScipt (&amp; JQuery)</li>
+									<li>APIs &amp; AJAX</li>
+									<li>Node.js</li>
+									<li>MySQL</li>
+									<li>Express.js</li>
+									<li>Handlebars.js</li>
+									<li>Git</li>
+									<li>Adobe Photoshop</li>
+									<li>Adobe Dreamweaver</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				<!--connect with me-->
+				<div class="connect row">
+					<div class="panel panel-default col-lg-12 col-md-12 col sm-12 col-xs-12 centered">
+						<div class="panel">
+							<h3 class="panel-heading">
 								Connect with Me
 							</h3>
 						</div>
-						<!--division-->
-							<div>
-								<a target="_blank" href="https://www.facebook.com/authorwbwelch"><img src="assets/images/facebook-Logo.jpg" alt="Facebook logo with rounded corners" style="width:50px;"></a>
-								<a target="_blank" href="https://www.instagram.com/wbwelch"><img src="assets/images/instagram-logo.png" alt="Instagram logo with rounded corners" style="width:50px;"></a>
-								<a target="_blank" href="https://www.linkedin.com/in/whitney-welch/"><img src="assets/images/linkedin-logo.png" alt="LinkedIn logo with rounded corners" style="width:50px;"></a>
-							</div>
+						<!--link and logo-->
+						<div class="panel-body">
+							<a target="_blank" href="https://www.linkedin.com/in/whitney-welch/"><img src="assets/images/linkedin-logo.png" alt="LinkedIn logo with rounded corners" style="width:50px;"></a>
 						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+		<!--footer-->
 		<footer class="footer text-center">
-
 			<div class="container">
 				<small>
-					&copy;Copyright 2017 Whitney Welch
+					&copy;Copyright 2017-2018
 				</small>
 			</div>
-
-			
 		</footer>	
 	</body>
 </html>
