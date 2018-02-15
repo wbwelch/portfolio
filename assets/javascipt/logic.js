@@ -1,5 +1,8 @@
 //JavaScipt Document
 
+//on document ready
+$( document ).ready(function() {
+    
 //global variables
 
 //portfolio clickable divs
@@ -31,4 +34,7 @@ $("#writing-block").on("click", function() {
     div1.hide();
     div2.hide();
     div3.show();
+});
+    
+//onready end
 });
