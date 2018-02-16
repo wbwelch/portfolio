@@ -49,6 +49,9 @@ h3 {
 .centered {
 	text-align: center;
 }
+.left {
+    text-align: left;
+}
 .nav-menu {
 	color: #821B1C;
 	text-decoration: underline;
@@ -92,7 +95,6 @@ hr {
         -ms-transform: rotate(120deg);
          -o-transform: rotate(120deg);
             transform: rotate(120deg);
-    cursor: pointer;
 }
 .hexagon-in1 {
     overflow: hidden;
@@ -126,6 +128,10 @@ hr {
 .hr-light {
     width: 75%;
 }
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
 /*
 ========================================
 GRID
@@ -137,11 +143,10 @@ GRID
     margin: 15px auto;
 }
 .logo-box{
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     position: absolute;
     right: 65%;
-    top: -5px;
 }
 .nav-menu {
     display: inline-block;
@@ -212,6 +217,10 @@ a {
 .footer {
 	display: table-row;
 	height: 1px;
+}
+.connect-icons {
+    width:8em;
+    margin: 0 .5em 2em .5em;
 }
 /*
 ========================================
