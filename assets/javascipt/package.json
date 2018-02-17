@@ -1,7 +1,6 @@
 {
   "name": "javascipt",
   "version": "1.0.0",
-  "description": "",
   "main": "chart-logic.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "require": "^2.4.20"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
