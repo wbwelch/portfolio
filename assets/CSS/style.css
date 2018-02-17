@@ -12,7 +12,6 @@ html {
   height: 100%;
 }
 body {
-	background-image: url(../images/backgrounds/black_linen_v2_@2X.png);
  	background-size: 100%;
   	min-height: 100%;
 	width: 100%;
@@ -221,6 +220,12 @@ a {
 .connect-icons {
     width:8em;
     margin: 0 .5em 2em .5em;
+}
+.bar-canvas {
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    margin: 3em auto;
 }
 /*
 ========================================
