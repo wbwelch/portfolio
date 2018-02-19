@@ -12,12 +12,15 @@ html {
   height: 100%;
 }
 body {
+    background-image: url(../images/background-galaxy.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
  	background-size: 100%;
   	min-height: 100%;
 	width: 100%;
 	position: absolute;
 	height: auto;
-	color: #212121;
+	color: #605d5d;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 /*
@@ -45,16 +48,31 @@ h3 {
     margin: 1em;
     padding: 1em;
 }
-.centered {
-	text-align: center;
-}
-.left {
-    text-align: left;
+p {
+    padding: 8px 12px 8px 2px;
+    margin: 8px 12px 8px 2px;
+    font-size: 18px;
 }
 .nav-menu {
 	color: #821B1C;
 	text-decoration: underline;
 	font-size: 18px;
+}
+.about-title,
+.about-head {
+    color: #605d5d;
+}
+.about-title {
+    font-size: 28px;
+}
+.about-me {
+    font-size: 16px;
+}
+.centered {
+	text-align: center;
+}
+.left {
+    text-align: left;
 }
 .small {
 	font-size: 18px;
@@ -65,13 +83,25 @@ small {
 .bold {
 	font-weight: 700;
 }
+.inline-text {
+    display: inline;
+}
 .photo-text-small {
 	color: #821B1C;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	font-size: 14px;
 }
-.inline-text {
-    display: inline;
+.lang-titles {
+    font-size: 24px;
+    font-variant: small-caps;
+    padding: 10px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: underline;
+    color: #605d5d;
+}
+.back-button {
+    font-size: 22px;
 }
 /*
 ========================================
@@ -166,11 +196,11 @@ GRID
 	display: inline-block;
 	width: 90%;
 	padding: 5px auto;
-	margin: 10px auto 10px 3em;
+	margin: 10px auto 10px 4em;
 }
 .portfolio-image {
-	position: relative;
-	width: 40%;
+	position: inherit;
+	width: 25%;
 	padding: 5px auto;
 	margin: 10px auto;
 }
@@ -209,6 +239,9 @@ a {
 	margin: 10px auto;
 	width: 90%;
 }
+.transp {
+    background-color: rgba(255, 255, 255, .3);
+}
 .about-me-holder {
 	padding: 5px;
 	margin: 10px auto;
@@ -225,7 +258,9 @@ a {
     position: relative;
     display: inline-block;
     padding: 1em;
-    margin: 3em auto;
+}
+.lang-li {
+    position: relative;
 }
 /*
 ========================================
@@ -233,9 +268,6 @@ MEDIA QUERIES
 ========================================
 */
 @media screen and (max-width: 991px) {
-	body {
-		width: 100%;
-	}
     .header-box {
         position: relative;
         height: auto;
@@ -267,6 +299,7 @@ MEDIA QUERIES
 	}
 	.portfolio-entries {
 		width: 100%;
+        margin: 10px auto;
 	}
 	.photo-text {
 		font-size: 28px;

@@ -19,17 +19,18 @@ var ctxFam2 = $("#fam-lang-2")
 var ctxFam3 = $("#fam-lang-3")
 var ctxFam4 = $("#fam-lang-4")
 
+
 //default styel overwrite
 
 Chart.defaults.global.defaultFontColor = 'rgb(130, 27, 28)';
 Chart.defaults.global.defaultFontSize = 20;
 Chart.defaults.global.defaultFontFamily = 'font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif';
+Chart.defaults.global.legend.display = false;
 
 //prof-lang-1
 
 var profLangChart1 = new Chart(ctx1, {
     type: 'horizontalBar',
-    labels: ["HTML/HTML5"],
     data: {
         datasets: [{
             label: 'HTML/HTML5',
@@ -55,7 +56,7 @@ var profLangChart1 = new Chart(ctx1, {
                 ticks: {
                     beginAtZero:true,
                     suggestedMax:100
-                }
+                },
             }]
         }
     }
@@ -105,7 +106,7 @@ var profLangChart3 = new Chart(ctx3, {
     data: {
         datasets: [{
             label: 'JavaScript',
-            data: [70],
+            data: [59],
             backgroundColor: [
                 'rgb(179, 36, 100)'
             ],
@@ -177,7 +178,7 @@ var profLangChart5 = new Chart(ctx5, {
     data: {
         datasets: [{
             label: 'APIs/AJAX',
-            data: [62],
+            data: [42],
             backgroundColor: [
                 'rgb(154, 81, 186)'
             ],
@@ -213,7 +214,7 @@ var profLangChart6 = new Chart(ctx6, {
     data: {
         datasets: [{
             label: 'Git',
-            data: [65],
+            data: [44],
             backgroundColor: [
                 'rgb(87, 43, 140)'
             ],
@@ -285,7 +286,7 @@ var famLangChart1 = new Chart(ctxFam1, {
     data: {
         datasets: [{
             label: 'Express.js',
-            data: [42],
+            data: [39],
             backgroundColor: [
                 'rgb(3, 71, 142)'
             ],

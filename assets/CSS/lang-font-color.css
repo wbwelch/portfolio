@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+========================================
+PROFICIENT LANGUAGES
+========================================
+*/
+#prof-l1-1 {
+    color: rgb(178, 24, 12);
+    font-size: 18px;
+}
+#prof-l1-2 {
+    color: rgb(210, 47, 68);
+    font-size: 18px;
+}
+#prof-l1-3 {
+    color: rgb(179, 36, 100);
+    font-size: 18px;
+}
+#prof-l1-4 {
+    color: rgb(225, 92, 181);
+    font-size: 18px;
+}
+#prof-l1-5 {
+    color: rgb(154, 81, 186);
+    font-size: 18px;
+}
+#prof-l1-6 {
+    color: rgb(87, 43, 140);
+    font-size: 18px;
+}
+#prof-l1-7 {
+    color: rgb(7, 36, 102);
+    font-size: 18px;
+}
+/*
+========================================
+FAMILIAR LANGUAGES
+========================================
+*/
+#fam-l1-1 {
+    color: rgb(3, 71, 142);
+    font-size: 18px;
+}
+#fam-l1-2 {
+    color: rgb(3, 101, 150);
+    font-size: 18px;
+}
+#fam-l1-3 {
+    color: rgb(1, 91, 126);
+    font-size: 18px;
+}
+#fam-l1-4 {
+    color: rgb(1, 52, 79);
+    font-size: 18px;
+}
