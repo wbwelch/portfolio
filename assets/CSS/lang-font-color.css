@@ -22,15 +22,19 @@ PROFICIENT LANGUAGES
     font-size: 18px;
 }
 #prof-l1-5 {
-    color: rgb(154, 81, 186);
+    color: rgb(199, 48, 149);
     font-size: 18px;
 }
 #prof-l1-6 {
-    color: rgb(87, 43, 140);
+    color: rgb(154, 81, 186);
     font-size: 18px;
 }
 #prof-l1-7 {
-    color: rgb(7, 36, 102);
+    color: rgb(115, 52, 142);
+    font-size: 18px;
+}
+#prof-l1-8 {
+    color: rgb(70, 32, 87);
     font-size: 18px;
 }
 /*
@@ -39,18 +43,22 @@ FAMILIAR LANGUAGES
 ========================================
 */
 #fam-l1-1 {
-    color: rgb(3, 71, 142);
+    color: rgb(2, 97, 145);
     font-size: 18px;
 }
 #fam-l1-2 {
-    color: rgb(3, 101, 150);
+    color: rgb(5, 145, 216);
     font-size: 18px;
 }
 #fam-l1-3 {
-    color: rgb(1, 91, 126);
+    color: rgb(9, 130, 177);
     font-size: 18px;
 }
 #fam-l1-4 {
-    color: rgb(1, 52, 79);
+    color: rgb(3, 76, 114);
+    font-size: 18px;
+}
+#fam-l1-5 {
+    color: rgb(1, 27, 41);
     font-size: 18px;
 }

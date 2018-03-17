@@ -20,8 +20,9 @@ body {
 	width: 100%;
 	position: absolute;
 	height: auto;
-	color: #605d5d;
+	color: #212121;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    text-shadow: 1px 1px #e3dfdf;
 }
 /*
 ========================================
@@ -40,7 +41,7 @@ h1 {
 }
 h2 {
     color: #212121;
-    font-size: 42px;
+    font-size: 36px;
 }
 h3 {
 	font-size: 24px;
@@ -48,9 +49,13 @@ h3 {
     margin: 1em;
     padding: 1em;
 }
+h4 {
+    color: #212121;
+    font-size: 18px;
+}
 p {
     padding: 8px 12px 8px 2px;
-    margin: 8px 12px 8px 2px;
+    margin: .5em;
     font-size: 18px;
 }
 .nav-menu {
@@ -60,13 +65,18 @@ p {
 }
 .about-title,
 .about-head {
-    color: #605d5d;
+    color: #3b3b3b;
 }
 .about-title {
-    font-size: 28px;
+    font-size: 20px;
 }
 .about-me {
     font-size: 16px;
+}
+.about-head,
+h4.indent {
+    margin: .2em auto;
+    padding: .1em auto;
 }
 .centered {
 	text-align: center;
@@ -82,6 +92,9 @@ small {
 }
 .bold {
 	font-weight: 700;
+}
+em {
+    font-style: italic;
 }
 .inline-text {
     display: inline;
@@ -102,6 +115,17 @@ small {
 }
 .back-button {
     font-size: 22px;
+}
+.lang-li {
+    list-style-type: circle;
+    margin: 0 auto;
+    text-align: center;
+}
+.indent {
+    text-indent: 3em;
+}
+.indent-x2 {
+    text-indent: 6em;
 }
 /*
 ========================================
@@ -161,15 +185,19 @@ img:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
+.top-bar {
+    border-top: 1px #a3a3a3;
+}
 /*
 ========================================
 GRID
 ========================================
 */
-.rela {
-    display: inline-block;
-    position: relative;
-    margin: 15px auto;
+.container {
+    width: 90%;
+    padding: 1.0em;
+    margin-left: auto;
+    margin-right: auto;
 }
 .logo-box{
     height: 90px;
@@ -185,6 +213,7 @@ GRID
     position: relative;
     height: 75px;
     text-align: right;
+    margin-bottom: 3em;
 }
 .bottom-text {
     position: absolute;
@@ -199,10 +228,11 @@ GRID
 	margin: 10px auto 10px 4em;
 }
 .portfolio-image {
-	position: inherit;
+	position: relative;
+    display: inline-block;
 	width: 25%;
-	padding: 5px auto;
-	margin: 10px auto;
+	padding: .1em auto;
+	margin: .2em auto;
 }
 .photo-text {
 	position: relative;
@@ -211,8 +241,8 @@ GRID
 	color: #821B1C;
 	text-align: center;
 	width: 90%;
-	padding: 15px;
-	margin: 10px auto;
+	padding: .3em;
+	margin: .2em auto;
 }
 .photo-text-small {
 	display: inline;
@@ -221,7 +251,7 @@ GRID
 }
 #port-image {
 	position: relative;
-	top: 2em;
+	top: .5em;
 	margin: auto;
 }
 .box-center {
@@ -237,14 +267,19 @@ a {
 	position: relative;
 	padding: 10px auto;
 	margin: 10px auto;
-	width: 90%;
+	width: 95%;
 }
 .transp {
     background-color: rgba(255, 255, 255, .3);
 }
 .about-me-holder {
 	padding: 5px;
-	margin: 10px auto;
+	margin: 2% ;
+}
+.pdf-box {
+    position: relative;
+    display: inline-block;
+    margin: .5em auto;
 }
 .footer {
 	display: table-row;
@@ -261,6 +296,9 @@ a {
 }
 .lang-li {
     position: relative;
+}
+.clear {
+    clear: both;
 }
 /*
 ========================================
@@ -290,9 +328,9 @@ MEDIA QUERIES
         top: 0;
         right: 0;
     }
-	.about-me-holder {
+	.about-me-head-holder {
 		position: relative;
-		top: 4em;
+        left: 7em
 	}
 	#port-image {
 		top: 1em;
@@ -311,6 +349,34 @@ MEDIA QUERIES
 @media screen and (max-width: 767px) {
     .nav-menu {
         left: 0;
+    }
+    .about-me-head-holder {
+        top: 4em;
+        left: 0;
+	}
+    .photo-text {
+        display: block;
+        text-align: center;
+        top: .2em;
+    }
+    .photo-text-small {
+        display: block;
+        position: relative;
+        top: .2em;
+    }
+    .portfolio-image {
+        position: relative;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 515px) {
+     .connect-icons {
+        width: 46%;
+    }
+    .about-title,
+    h4.indent,
+    h4.indent-x2 {
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 475px) {
