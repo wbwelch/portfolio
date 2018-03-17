@@ -84,6 +84,9 @@ h4.indent {
 .left {
     text-align: left;
 }
+.right {
+    text-align: right;
+}
 .small {
 	font-size: 18px;
 }
@@ -179,7 +182,8 @@ hr {
     margin: -80px 0 0 20px;
 }
 .hr-light {
-    width: 75%;
+    width: 90%;
+    border-color: #717070;
 }
 img:hover {
     opacity: 0.5;
@@ -198,6 +202,11 @@ GRID
     padding: 1.0em;
     margin-left: auto;
     margin-right: auto;
+}
+.text-container {
+    background-color: #fff;
+    padding: 1em .5em;
+    margin: .5em;
 }
 .logo-box{
     height: 90px;
@@ -219,6 +228,10 @@ GRID
     position: absolute;
     top: 1em;
     right: 80%;
+}
+.about-title {
+    padding: .2em 0;
+    margin: .4em .1em;
 }
 .portfolio-entries {
     position: relative;
@@ -274,7 +287,10 @@ a {
 }
 .about-me-holder {
 	padding: 5px;
-	margin: 2% ;
+	margin: 2% auto;
+}
+.border {
+    border: solid 1px #b7b5b5;
 }
 .pdf-box {
     position: relative;
@@ -300,6 +316,10 @@ a {
 .clear {
     clear: both;
 }
+.clear-abs {
+    position: relative;
+    top: 1em;
+}
 /*
 ========================================
 MEDIA QUERIES
@@ -323,15 +343,16 @@ MEDIA QUERIES
     }
     .bottom-text {
         position: relative;
-        display: block;
+        right: -2em;
         text-align: right;
-        top: 0;
-        right: 0;
     }
 	.about-me-head-holder {
 		position: relative;
         left: 7em
 	}
+    .port-opt {
+        display: block;
+    }
 	#port-image {
 		top: 1em;
 	}
@@ -345,10 +366,15 @@ MEDIA QUERIES
 	.connect {
 		bottom: -30px;
 	}
+    .clear-abs {
+        top: 2em;
+    }
 }
 @media screen and (max-width: 767px) {
     .nav-menu {
-        left: 0;
+        position: relative;
+        display: inline-block;
+        margin: .2em auto;
     }
     .about-me-head-holder {
         top: 4em;
@@ -368,6 +394,13 @@ MEDIA QUERIES
         position: relative;
         width: 100%;
     }
+    .clear-abs {
+        top: 3em;
+    }
+    .break-tab {
+        display: block;
+        text-indent: 3em;
+    }
 }
 @media screen and (max-width: 515px) {
      .connect-icons {
@@ -377,6 +410,9 @@ MEDIA QUERIES
     h4.indent,
     h4.indent-x2 {
         font-size: 1em;
+    }
+    .clear-abs {
+        top: 4em;
     }
 }
 @media screen and (max-width: 475px) {
